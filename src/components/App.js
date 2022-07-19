@@ -13,9 +13,9 @@ function App() {
   }
 
   function handlingAddItems(newItem) {
-    console.log(newItem);
+    // console.log(newItem);
     setItems([...items, newItem]);
-    console.log(items);
+    // console.log(items);
   }
 
   return (
