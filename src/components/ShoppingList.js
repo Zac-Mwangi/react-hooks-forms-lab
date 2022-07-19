@@ -11,11 +11,7 @@ function ShoppingList({ items, onItemFormSubmit }) {
     setSelectedCategory(event.target.value);
   }
 
-  const itemsToDisplay = items
-    .filter(
-      (item) => selectedCategory === "All" || item.category === selectedCategory
-    )
-    .filter((item) => item.name.toLowerCase().includes(search.toLowerCase()));
+  const itemsToDisplay = items.filter((item) => selectedCategory === "All" || item.category === selectedCategory).filter((item) => item.name.toLowerCase().includes(search.toLowerCase()));
 
   return (
     <div className="ShoppingList">
